@@ -1,0 +1,27 @@
+{
+    "version": "0.1.0",
+    "configurations": [
+        {
+            "cwd": "${workspaceRoot}",
+            "executable": "${workspaceRoot}/build/zephyr/zephyr.elf",
+            "gdbPath": "C:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gdb.exe",
+            "name": "Debug with OpenOCD",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "openocd",
+            "configFiles": [
+                "interface/ftdi/ft232h-module-swd.cfg",
+                "target/nrf52.cfg"
+            ],
+            "searchDir": [],
+            "runToEntryPoint": "main",
+            "runToMain": true,
+            "showDevDebugOutput": true,
+
+
+            
+            
+            
+        },
+    ]
+}
